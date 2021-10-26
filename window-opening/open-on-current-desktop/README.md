@@ -25,7 +25,7 @@ There are three cases when this happens: A program is already open on a differen
 
 ### 1. Programs that can only run one instance
 
-1. Find out the window class of the program: Open a window of the program, run `wmctrl -l -x ` in a terminal, and get the window class name from the third column, e.g. `Mail.thunderbird`.
+1. Find out the window class of the program: Open a window of the program, run `wmctrl -l -x ` in a terminal, and get the window class name from the third column, e.g. `Mail.Thunderbird`.
 2. Insert the window class as a string for the variable `win_class` in `open_thunderbird_on_current_desktop.sh`.
 3. Find out the command to open the program, e.g. `thunderbird`.
 4. Insert the launch command as a string for the variable `launch` in `open_thunderbird_on_current_desktop.sh`.
