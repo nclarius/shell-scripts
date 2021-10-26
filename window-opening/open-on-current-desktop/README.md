@@ -33,19 +33,19 @@ There are three cases when this happens: A program is already open on a differen
 
 ### 2. Programs that prefer opening files in an existing window
 
-3. Find out the window class of the program: Open a window of the program, run `wmctrl -l -x ` in a terminal, and get the window class name from the third column, e.g. `Navigator.firefox`.
+1. Find out the window class of the program: Open a window of the program, run `wmctrl -l -x ` in a terminal, and get the window class name from the third column, e.g. `Navigator.firefox`.
 
-4. Insert the window class as a string for the variable `win_class` in `open_firefox_on_current_desktop.sh`.
+2. Insert the window class as a string for the variable `win_class` in `open_firefox_on_current_desktop.sh`.
 
-5. Find out the command to open the file in a new window, e.g. `firefox -new-window` or `atom -n`.
+3. Find out the command to open the file in a new window, e.g. `firefox -new-window` or `atom -n`.
 
-6. Insert the launch-new command as a string for the variable `launch_new` in `open_firefox_on_current_desktop.sh`.
+4. Insert the launch-new command as a string for the variable `launch_new` in `open_firefox_on_current_desktop.sh`.
 
-7. Find out the command to open the file in an existing window, e.g. `firefox -new-tab` or `atom`.
+5. Find out the command to open the file in an existing window, e.g. `firefox -new-tab` or `atom`.
 
-8. Insert the launch-existing command as a string for the variable `launch_old` in `open_firefox_on_current_desktop.sh`.
+6. Insert the launch-existing command as a string for the variable `launch_old` in `open_firefox_on_current_desktop.sh`.
 
-9. Make `open_firefox_on_current_desktop.sh` the application to open the desired file types: *System Settings* > *Applications* > *File Associations* or *Default Applications* > select relevant file types > add the path to `open_firefox_on_current_desktop.sh` and make it the top preference.
+7. Make `open_firefox_on_current_desktop.sh` the application to open the desired file types: *System Settings* > *Applications* > *File Associations* or *Default Applications* > select relevant file types > add the path to `open_firefox_on_current_desktop.sh` and make it the top preference.
 
    
 
