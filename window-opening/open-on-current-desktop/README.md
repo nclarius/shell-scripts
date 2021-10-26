@@ -1,6 +1,6 @@
 # Open on current desktop
 
-Shell scripts to make applications always open on the current virtual desktop. This is intended to fix an annoying behavior with KWin where opening a window would sometimes teleport you to a different desktop without your command.
+Shell scripts to make specific applications always open on the current virtual desktop. This is intended to fix an annoying behavior with KWin where opening a window would sometimes teleport you to a different desktop without your command.
 
 There are three cases when this happens: A program is already open on a different desktop, and either:
 
@@ -10,7 +10,7 @@ There are three cases when this happens: A program is already open on a differen
 
 `open_thunderbird_on_current_desktop.sh` fixes problem 1 by moving a possible existing instance to the current desktop.
 
-`open_firefox_on_current_desktop.sh` partially fixes problems 2 and 3 by instructing the program to open the file in a new window if there is no existing instance on the current desktop. However, problem 2 might not be entirely solved due to missing file associations, e.g. the Firefox script will work for bookmarks opened from KRunner but not for links opened from Thunderbird for some reason. As for problem 3, the window manager will in some cases still highlight the other window and open the file in the wrong existing window.
+`open_firefox_on_current_desktop.sh` partially fixes problems 2 and 3 by instructing the program to open the file in a new window if there is no existing instance on the current desktop. However, problem 2 might not be entirely solved due to missing file associations, e.g. the Firefox script will work for bookmarks opened from KRunner but not for links opened from Thunderbird for some reason. As for problem 3, the window manager will in some cases still highlight the other window and open the file in the wrong existing window. If you have a better fix, please let me know.
 
 
 ## Installation
