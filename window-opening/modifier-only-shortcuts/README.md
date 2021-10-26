@@ -24,13 +24,13 @@ Shell script to make modifier keys in isolation trigger certain actions; here: p
 4. set modifier-only shortcut:
    edit ``~/.config/.kwincr`:
 
-       ```
+   ````
    ...
    [ModifierOnlyShortcuts]
    ...
    Meta=org.kde.kglobalaccel,/component/khotkeys,org.kde.kglobalaccel.Component,invokeShortcut,{Uuid}
    ...
-       ```
+   ````
 
    with the Uuid inserted into the curly braces.
 
