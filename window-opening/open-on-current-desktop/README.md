@@ -1,6 +1,6 @@
-# Open on current desktop
+# Open on Current Desktop
 
-Shell scripts to make specific applications always open on the current virtual desktop. This is intended to fix an annoying behavior with KWin where opening a window would sometimes teleport you to a different desktop without your command.
+Shell scripts to make specific applications always open on the current virtual desktop. This is trying to fix an annoying behavior with KWin where opening a window would sometimes teleport you to a different desktop without your command.
 
 There are three cases when this happens: A program is already open on a different desktop, and either:
 
@@ -31,7 +31,7 @@ There are three cases when this happens: A program is already open on a differen
 4. Insert the launch command as a string for the variable `launch` in `open_thunderbird_on_current_desktop.sh`.
 5. Make `open_thunderbird_on_current_desktop.sh` the way to open the desired program, e.g. by defining a custom keyboard shortcut or adding an entry in the kickoff menu or task bar (you can find instructions for this on the web).
 
-### 2. Programs that prefer opening files in an existing window
+### 2. Programs that prefer opening files in an existing window or raise existing other windows
 
 1. Find out the window class of the program: Open a window of the program, run `wmctrl -l -x ` in a terminal, and get the window class name from the third column, e.g. `Navigator.firefox`.
 
