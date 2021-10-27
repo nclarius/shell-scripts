@@ -16,7 +16,7 @@ Extension for KDE’s window manager to add a keyboard shortcut to swap the wind
 
 ### Method 1: via graphical interface
 
-1. Install the script via *System Settings* > *Window Management* > *KWin Scripts* > *Get New Scripts …* > search for the script > *Install*.
+1. Install the script via *System Settings* > *Window Management* > *KWin Scripts* > *Get New Scripts …* > search for *Swap Left and Right* > *Install*.
 2. Activate the script by selecting the checkbox in the respective entry.
 
 ### Method 2: via command line
