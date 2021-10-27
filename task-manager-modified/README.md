@@ -17,9 +17,9 @@ You can diff my fork against the main branch and cherry-pick your own combinatio
 
 ## Installation
 
-1. Download: GitHub repo > green top right button *Code* > *Download ZIP* > unpack and extract the `task-manager` folder
+1. Download: GitHub repo > green top right button *Code* > *Download ZIP* > unpack and extract the `task-manager-modified` folder
 
-2. Install the package: Open a terminal in the `task-manager` folder and run 
+2. Install the package: Open a terminal in the `task-manager-modified` folder and run 
 
    ````bash
    kpackagetool5 -t Plasma/Applet --install package
