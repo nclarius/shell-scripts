@@ -1,4 +1,4 @@
-# KWin window positioning scripts
+# KWin Window Positioning Scripts
 
 A collection of small extensions for KDE’s window manager targeting window positioning.
 
