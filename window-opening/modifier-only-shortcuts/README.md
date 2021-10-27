@@ -8,7 +8,7 @@ Shell script and instructions to make modifier keys (Ctrl, Alt, Meta, ...) in is
    Right-click on the `.sh` file > *Properties* > *Permissions* > checkbox *Is executable*.
 
 2. Add a custom shortcut:
-   *System Settings* > *Shortcuts* > *Custom Shortcuts* > *Edit* > *New* > *Global Shortcut* > *Command/URL*
+   *System Settings* > *Shortcuts* > *Custom Shortcuts* > *Edit* > *New* > *Global Shortcut* > *Command/URL*.
 
    - *Name*: ‘toggle KRunner’
    - *Comment*: ‘toggle KRunner’
