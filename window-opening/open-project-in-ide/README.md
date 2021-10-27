@@ -1,4 +1,4 @@
-# Open project in IDE
+# Open Project in IDE
 
 Shell script and instructions to open a source code project in an IDE from the file manager.
 
