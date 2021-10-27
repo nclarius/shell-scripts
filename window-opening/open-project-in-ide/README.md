@@ -27,12 +27,11 @@ To open the project in the IDE, click on the `directoryname.fileending` file.
 
 ## Small Print
 
+© 2021 Natalie Clarius \<natalie_clarius@yahoo.de\>
+
 This work is licensed under the GNU General Public License v3.0.  
 This program comes with absolutely no warranty.  
 This is free software, and you are welcome to redistribute and/or modify it under certain conditions.  
-
-© 2021 Natalie Clarius \<natalie_clarius@yahoo.de\>
-
 
 If you would like to thank me, you can make me happy by [buying me a tea](https://www.buymeacoffee.com/nclarius).
 
