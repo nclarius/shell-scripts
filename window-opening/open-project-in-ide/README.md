@@ -1,13 +1,13 @@
 # Open project in IDE
 
-Shell script to open a source code project in an IDE from the file manager.
+Shell script and instructions to open a source code project in an IDE from the file manager.
 
 
 
 ## Installation
 
-1. Download the script: GitHub > green top right button *Code* > *Download ZIP* > unpack > extract this folder.
-3. Make the script executable: right-click on the `.sh` file > *Properties* > *Permissions* > checkbox *Is executable*
+1. Download the script: GitHub repository > green top right button *Code* > *Download ZIP* > unpack > extract this folder.
+3. Make the script executable: right-click on the `.sh` file > *Properties* > *Permissions* > checkbox *Is executable*.
 
 
 
