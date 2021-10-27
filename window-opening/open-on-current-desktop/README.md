@@ -43,7 +43,7 @@ With the script `open_firefox_on_current_desktop.sh`:
 4. Insert the launch-new command as a string for the variable `launch_new` in the script.
 5. Find out the command to open the file in an existing window, e.g. `firefox -new-tab` or `atom`.
 6. Insert the launch-existing command as a string for the variable `launch_old` in the script.
-7. Make the script the application to open the desired file types: *System Settings* > *Applications* > *File Associations* or *Default Applications* > select relevant file types > add the path to `open_firefox_on_current_desktop.sh` and make it the top preference.
+7. Make the script the application to open the desired file types: *System Settings* > *Applications* > *File Associations* or *Default Applications* > select relevant file types > add the path to the script and make it the top preference.
 
    
 
