@@ -14,7 +14,7 @@ Shell script and instructions to open a source code project in an IDE from the f
 ## Set-up
 
 1. Find out the command to open your IDE and insert it for `pycharm`.
-2. In each directory where you want to open a source code project in an IDE from the file manager, create an empty file `directoryname.fileending`, where `directoryname` is the name of the folder where your file are and `fileending` is a custom file ending, e.g. `.pycp` for ‘PyCharm project’.
+2. In each directory where you want to open a source code project in an IDE from the file manager, create an empty file `directoryname.fileending`, where `directoryname` is the name of the project folder and `fileending` is a custom file ending, e.g. `.pycp` for ‘PyCharm project’.
 3. Make `open_pycharm_project.sh` the application to open the custom file type: *System Settings* > *Applications* > *File Associations* or *Default Applications* > select relevant file type > add the path to `open_pycharm_project.sh` and make it the top preference.
 
 
