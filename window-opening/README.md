@@ -1,4 +1,4 @@
-# Shell window opening scripts
+# Shell Window Opening Scripts
 
 A collection of small shell scripts and instructions targeting window opening.
 
