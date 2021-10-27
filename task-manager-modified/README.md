@@ -3,7 +3,7 @@
 This is a modification of KDE’s [task manager applet](https://github.com/KDE/plasma-desktop/tree/master/applets/taskmanager) with a bunch of dirty hacks to:
 
 - make it properly centrable (the original has some protruding space causing the entries to be shifted off-center)
-- strip the labels down to bare file names (in particular, remove window names)
+- strip the labels down to bare file names (in particular, remove application names)
 - center the labels in the entry and elide (…) long labels in the middle instead of the end
 - add more window controls in the tool tip
 - restore the behavior of previous versions where hovering an entry shows a semi-translucent full-screen preview of the window, and remove the small thumbnails
