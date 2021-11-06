@@ -1,6 +1,8 @@
 # Update Moodle
 
-Shell script to automatize uploading files to the Moodle learning management system, intended to take over tedious clicking routines for material that needs frequent updating.
+Shell script to automatize uploading files to the Moodle learning management system.  
+
+It is intended to take over tedious clicking routines for material that needs frequent updating, but not suited to create new entries as each file requires an initial set-up.  
 
 The script works by simulating key strokes (Tab and Enter etc.) to navigate the website. It’s ugly, fragile and looks scary but it works.
 
