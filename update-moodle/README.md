@@ -22,7 +22,7 @@ For each file you want to update, specify the URL and file path and set up a sho
 2. In `update_moodle.sh`, add the URL to the Moodle edit page (Moodle > *Turn editing on* > entry you want to update > *Edit* > *Edit settings* > copy the URL from the address bar) to  the `linkmap` declaration in the form `["shortcut"]="url"`.
 3. In `update_moodle.sh`, add the local path to the file you want to upload to the `pathmap` declaration in the form `["shortcut"]="path"`.
 
-Since the functionality of the script depends on the precise structure of the Moodle webpage, it is recommended that before running the script for the first time, you manually keyboard-navigate through the Moodle edit page and make sure that the sequence of keystrokes used in the script indeed leads to the desired UI  elements, and change the commands in the script if necessary.
+Since the functionality of the script depends on the precise structure of the Moodle webpage, it is recommended that before running the script for the first time, you manually keyboard-navigate through the Moodle edit page and confirm that the sequence of keystrokes used in the script indeed ends up in the desired website elements, and change the commands in the script if necessary.
 
 
 
@@ -32,7 +32,7 @@ Since the functionality of the script depends on the precise structure of the Mo
 path_to_the_script/moodle.sh shortcut
 ```
 
-where shortcut is the key for the Moodle file edit page URL and the file path defined as described above.
+where `shortcut` is the key for the Moodle file edit page URL and the file path defined as described above.
 
 
 
