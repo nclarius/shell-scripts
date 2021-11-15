@@ -4,13 +4,19 @@ Shell scripts to make specific applications always open on the current virtual d
 
 There are three cases when this happens: A program is already open on a different desktop, and either:
 
-1. The program can only run one instance, e.g. Thunderbird.
-2. The program prefers to open files in an existing window, e.g. Firefox.
+1. The program can only run one instance, e.g. Thunderbird or KDE System Settings.
+
+   This gets fixed with `open_thunderbird_on_current_desktop.sh` by moving a possible existing instance to the current desktop.
+
+2. The program prefers to open files in an existing window, e.g. Firefox or Atom.
+
+   This gets fixed with `open_firefox_on_current_desktop.sh` by instructing the program to open the file in a new window if there is no existing instance on the current desktop
+
 3. The program raises other existing instances when opening a new file, e.g. Atom.
 
-`open_thunderbird_on_current_desktop.sh` fixes problem 1 by moving a possible existing instance to the current desktop.
+   This gets fixed with [Demands Attention Only on Current Desktop](https://www.pling.com/p/1112536) by Martin Gräßlin.
 
-`open_firefox_on_current_desktop.sh` partially fixes problems 2 and 3 by instructing the program to open the file in a new window if there is no existing instance on the current desktop. However, problem 2 might not be entirely solved due to missing file associations, e.g. the Firefox script will work for bookmarks opened from KRunner but not for links opened from Thunderbird for some reason. As for problem 3, the window manager will in some cases still highlight the other window and open the file in the wrong existing window. If you have a better fix, please let me know.
+
 
 
 ## Installation
@@ -27,13 +33,13 @@ There are three cases when this happens: A program is already open on a differen
 
 With the script `open_thunderbird_on_current_desktop.sh`:
 
-1. Find out the window class of the program: Open an instance of the program, run `wmctrl -l -x ` in a terminal, and get the window class name from the third column, e.g. `Mail.Thunderbird`.
+1. Find out the window class of the program: Open an instance of the program, run `wmctrl -l -x ` in a terminal, and get the window class name from the third column, e.g. `Mail.Thunderbird` or `systemsettings5.systemsettings`.
 3. Insert the window class as a string for the variable `win_class` in the script.
-4. Find out the command to open the program, e.g. `thunderbird`.
+4. Find out the command to open the program, e.g. `thunderbird` or `systemsettings5`.
 5. Insert the launch command as a string for the variable `launch` in the script.
 6. Make the script the way to open the desired program, e.g. by defining a custom keyboard shortcut or adding an entry in the kickoff menu or task bar (you can find instructions for this on the web).
 
-### 2. Programs that prefer opening files in an existing window or raise existing other windows
+### 2. Programs that prefer opening files in an existing window
 
 With the script `open_firefox_on_current_desktop.sh`:
 
@@ -43,9 +49,15 @@ With the script `open_firefox_on_current_desktop.sh`:
 4. Insert the launch-new command as a string for the variable `launch_new` in the script.
 5. Find out the command to open the file in an existing window, e.g. `firefox -new-tab` or `atom`.
 6. Insert the launch-existing command as a string for the variable `launch_old` in the script.
-7. Make the script the application to open the desired file types: *System Settings* > *Applications* > *File Associations* or *Default Applications* > select relevant file types > add the path to the script and make it the top preference.
+7. Make the script the application to open the desired file types: *System Settings* > *Applications* > *File Associations* or *Default Applications* > select relevant file types > add the path to the script and make it the top preference. For setting the default browser in Thunderbird, see e.g. [these instructions](http://kb.mozillazine.org/Changing_the_web_browser_invoked_by_Thunderbird).
 
-   
+
+
+### 3. Programs that raise existing other windows
+
+See [Demands Attention Only on Current Desktop](https://www.pling.com/p/1112536).
+
+
 
 ## Small Print
 
