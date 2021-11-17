@@ -8,7 +8,7 @@ There are three cases when this happens: A program is already open on a differen
    This gets fixed with `open_thunderbird_on_current_desktop.sh` by moving a possible existing instance to the current desktop.
 
 2. The program prefers to open files in an existing window, e.g. Firefox or Atom.  
-   This gets fixed with `open_firefox_on_current_desktop.sh` by instructing the program to open the file in a new window if there is no existing instance on the current desktop
+   This gets fixed with `open_firefox_on_current_desktop.sh` by instructing the program to open the file in a new window if there is no existing instance on the current desktop.
 
 3. The program raises other existing instances when opening a new file, e.g. Atom.  
    This gets fixed with [Demands Attention Only on Current Desktop](https://www.pling.com/p/1112536) by Martin Gräßlin.
