@@ -1,16 +1,19 @@
 # Open on Current Desktop
 
-Shell scripts to make specific applications always open on the current virtual desktop. This is intended to fix an annoying behavior with KWin where opening a window would sometimes unsolicitedly teleport you to a different desktop.
+Shell scripts to make specific applications always open on the current virtual desktop. This is trying to fix an annoying behavior with KWin where opening a window would sometimes unsolicitedly teleport you to a different desktop.
 
 There are three cases when this happens: A program is already open on a different desktop, and either:
 
-1. The program can only run one instance, e.g. Thunderbird or KDE System Settings.  
+1. The program can only run one instance, e.g. Thunderbird or KDE System Settings.
+
    This gets fixed with `open_thunderbird_on_current_desktop.sh` by moving a possible existing instance to the current desktop.
 
-2. The program prefers to open files in an existing window, e.g. Firefox or Atom.  
-   This gets fixed with `open_firefox_on_current_desktop.sh` by instructing the program to open the file in a new window if there is no existing instance on the current desktop.
+2. The program prefers to open files in an existing window, e.g. Firefox or Atom.
 
-3. The program raises other existing instances when opening a new file, e.g. Atom.  
+   This gets fixed with `open_firefox_on_current_desktop.sh` by instructing the program to open the file in a new window if there is no existing instance on the current desktop
+
+3. The program raises other existing instances when opening a new file, e.g. Atom.
+
    This gets fixed with [Demands Attention Only on Current Desktop](https://www.pling.com/p/1112536) by Martin Gräßlin.
 
 
