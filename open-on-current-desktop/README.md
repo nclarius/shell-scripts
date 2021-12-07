@@ -38,6 +38,9 @@ With the script `open_thunderbird_on_current_desktop.sh`:
 4. Find out the command to open the program, e.g. `thunderbird` or `systemsettings5`.
 5. Insert the launch command as a string for the variable `launch` in the script.
 6. Make the script the way to open the desired program, e.g. by defining a custom keyboard shortcut or adding an entry in the kickoff menu or task bar (you can find instructions for this on the web).
+6. Make the script the command to be executed for any launcher you may have (task bar icon, [application menu](https://docs.kde.org/stable5/en/kmenuedit/kmenuedit/quickstart.html), [keyboard shortcut](https://www.reddit.com/r/linuxquestions/comments/jkxs8d/comment/gamggv7/?utm_source=share&utm_medium=web2x&context=3), …).
+
+
 
 ### 2. Programs that prefer opening files in an existing window
 
@@ -50,6 +53,7 @@ With the script `open_firefox_on_current_desktop.sh`:
 5. Find out the command to open the file in an existing window, e.g. `firefox -new-tab` or `atom`.
 6. Insert the launch-existing command as a string for the variable `launch_old` in the script.
 7. Make the script the application to open the desired file types: *System Settings* > *Applications* > *File Associations* or *Default Applications* > select relevant file types > add the path to the script and make it the top preference. For setting the default browser in Thunderbird, see e.g. [these instructions](http://kb.mozillazine.org/Changing_the_web_browser_invoked_by_Thunderbird).
+8. Make the script the command to be executed for any launcher you may have (task bar icon, [application menu](https://docs.kde.org/stable5/en/kmenuedit/kmenuedit/quickstart.html), [keyboard shortcut](https://www.reddit.com/r/linuxquestions/comments/jkxs8d/comment/gamggv7/?utm_source=share&utm_medium=web2x&context=3), …).
 
 
 
