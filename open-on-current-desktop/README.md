@@ -41,7 +41,7 @@ With the script `open_thunderbird_on_current_desktop.sh`:
 
 ### 2. Programs that prefer opening files in an existing window
 
-trash:/README.mdWith the script `open_firefox_on_current_desktop.sh`:
+With the script `open_firefox_on_current_desktop.sh`:
 
 1. Find out the window class of the program: Open an instance of the program, run `wmctrl -l -x ` in a terminal, and get the window class name from the third column, e.g. `Navigator.firefox` or `atom.Atom`.
 2. Insert the window class as a string for the variable `win_class` in the script.
