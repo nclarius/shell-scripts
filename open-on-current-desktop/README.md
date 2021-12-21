@@ -49,7 +49,7 @@ With the script `open_firefox_on_current_desktop.sh`:
 4. Insert the launch-new command as a string for the variable `launch_new` in the script.
 5. Find out the command to open the file in an existing window, e.g. `firefox -new-tab` or `atom`.
 6. Insert the launch-existing command as a string for the variable `launch_old` in the script.
-7. Make the script the application to open the desired file types: *System Settings* > *Applications* > *File Associations* or *Default Applications* > select relevant file types > add the path to the script and make it the top preference. For setting the default browser in Thunderbird, see e.g. [these instructions](http://kb.mozillazine.org/Changing_the_web_browser_invoked_by_Thunderbird).
+7. Make the script the application to open the desired file types: *System Settings* > *Applications* > *File Associations* or ... > *Default Applications* > select relevant file types > add the path to the script and make it the top preference. Note that some applications may ignore the system-wide settings and define their own program association preferences; e.g. for Thunderbird see [these instructions](http://kb.mozillazine.org/Changing_the_web_browser_invoked_by_Thunderbird).
 8. Make the script the command to be executed for any launcher you may have (task bar icon, [application menu entry](https://docs.kde.org/stable5/en/kmenuedit/kmenuedit/quickstart.html), [keyboard shortcut](https://www.reddit.com/r/linuxquestions/comments/jkxs8d/comment/gamggv7/?utm_source=share&utm_medium=web2x&context=3), …).
 
 
