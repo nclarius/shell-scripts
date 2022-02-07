@@ -13,7 +13,7 @@ There are three cases when this happens: A program is already open on a differen
 3. The program raises other existing instances when opening a new file, e.g. Atom.  
    This gets fixed with [Demands Attention Only on Current Desktop](https://www.pling.com/p/1112536) by Martin Gräßlin.
    
-All three cases furthermore get fixed with the path described below.
+All three cases furthermore get fixed with the patch.
 
 If you are willing to build KWin from source, you can apply the patch below to fix the problem at the root.
 
