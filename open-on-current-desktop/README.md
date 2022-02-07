@@ -1,6 +1,6 @@
 # Open on Current Desktop
 
-Fix to make all applications, and alternatively shell scripts to make specific applications, always open on the current virtual desktop. This is intended to fix an annoying behavior with KWin where opening a window would sometimes unsolicitedly teleport you to a different desktop.
+Path to make all applications, and alternatively shell scripts to make specific applications, always open on the current virtual desktop. This is intended to fix an annoying behavior with KWin where opening a window would sometimes unsolicitedly teleport you to a different desktop.
 
 There are three cases when this happens: A program is already open on a different desktop, and either:
 
