@@ -19,7 +19,7 @@ If you are willing to build KWin from source, you can apply the patch below to f
 
 If you are not comfortable with this or are not sure what it even is, you'll want to use the shell scripts instead.
 
-# Path
+## Patch
 
 In [`kwin/src/activation.cpp`, l. 293](https://invent.kde.org/plasma/kwin/-/blob/master/src/activation.cpp#L293)  
 
@@ -46,7 +46,7 @@ to
 Then [compile KWin from source](https://community.kde.org/Get_Involved/development).
 
 
-# Scripts
+## Scripts
 
 ## Installation
 
