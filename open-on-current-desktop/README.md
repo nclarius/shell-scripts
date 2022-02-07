@@ -21,7 +21,7 @@ If you are not comfortable with this or are not sure what it even is, you'll wan
 
 ## Patch
 
-In [`kwin/src/activation.cpp`, l. 293](https://invent.kde.org/plasma/kwin/-/blob/master/src/activation.cpp#L293)  
+In [`kwin/src/activation.cpp, l. 293`](https://invent.kde.org/plasma/kwin/-/blob/master/src/activation.cpp#L293)  
 
 
 ```
