@@ -1,6 +1,6 @@
 # Open on Current Desktop
 
-Shell scripts to make specific applications always open on the current virtual desktop. This is intended to fix an annoying behavior with KWin where opening a window would sometimes unsolicitedly teleport you to a different desktop.
+Fix to make all applications, and alternatively shell scripts to make specific applications, always open on the current virtual desktop. This is intended to fix an annoying behavior with KWin where opening a window would sometimes unsolicitedly teleport you to a different desktop.
 
 There are three cases when this happens: A program is already open on a different desktop, and either:
 
@@ -12,9 +12,41 @@ There are three cases when this happens: A program is already open on a differen
 
 3. The program raises other existing instances when opening a new file, e.g. Atom.  
    This gets fixed with [Demands Attention Only on Current Desktop](https://www.pling.com/p/1112536) by Martin Gräßlin.
+   
+All three cases furthermore get fixed with the path described below.
+
+If you are willing to build KWin from source, you can apply the patch below to fix the problem at the root.
+
+If you are not comfortable with this or are not sure what it even is, you'll want to use the shell scripts instead.
+
+# Fix
+
+In [`kwin/src/activation.cpp`, l. 293](https://invent.kde.org/plasma/kwin/-/blob/master/src/activation.cpp#L293)  
 
 
+```
+void Workspace::activateClient(AbstractClient* c, bool force) {
+    ...
+    if (!c->isOnCurrentDesktop()) {
+        ....
+```
 
+change
+
+```
+        VirtualDesktopManager::self()->setCurrent(c->desktops().constLast());
+```
+
+to
+
+```
+        Workspace::self()->sendClientToDesktop(c, VirtualDesktopManager::self()->current(), false);
+```
+
+Then [compile KWin from source](https://community.kde.org/Get_Involved/development).
+
+
+## Scripts
 
 ## Installation
 
