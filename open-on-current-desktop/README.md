@@ -5,20 +5,15 @@ Patch to make all applications, and alternatively shell scripts to make specific
 There are three cases when this happens: A program is already open on a different desktop, and either:
 
 1. The program can only run one instance, e.g. Thunderbird or KDE System Settings.  
+   This gets fixed with `open_thunderbird_on_current_desktop.sh` by moving a possible existing instance to the current desktop.
 
 2. The program prefers to open files in an existing window, e.g. Firefox or Atom.  
+   This gets fixed with `open_firefox_on_current_desktop.sh` by instructing the program to open the file in a new window if there is no existing instance on the current desktop.
 
 3. The program raises other existing instances when opening a new file, e.g. Atom.  
+   This gets fixed with [Demands Attention Only on Current Desktop](https://www.pling.com/p/1112536) by Martin Gräßlin.
    
-All three cases furthermore get fixed with the patch. Furthermore,
-
-1. gets fixed with `open_thunderbird_on_current_desktop.sh` by moving a possible existing instance to the current desktop.
-
-2. gets fixed with `open_firefox_on_current_desktop.sh` by instructing the program to open the file in a new window if there is no existing instance on the current desktop.
-
-3. This gets fixed with [Demands Attention Only on Current Desktop](https://www.pling.com/p/1112536) by Martin Gräßlin.
-
-If you are willing to build KWin from source, you can apply the patch below to fix the problem at the root.
+If you are willing to build KWin from source, you can apply the patch below to fix the problem at the root and cover all cases.
 
 If you are not comfortable with this or are not sure what building from source even is, you'll want to use the shell scripts instead.
 
