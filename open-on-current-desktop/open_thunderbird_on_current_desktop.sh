@@ -14,7 +14,7 @@ instance_other=$(wmctrl -l -x | awk -v win_class="$win_class" '{if ($2 != -1 && 
 
 if [[ -n $instance_other ]]; then
     # existing instance on some (current or other) single desktop: move to current desktop
-    wmctrl -i -r $instance_other -t $curr_desktop
+    wmctrl -i -r "$instance_other" -t "$curr_desktop"
 fi
 # no instance or existing instance on current (single or all) desktop: open (new) window
 $launch
