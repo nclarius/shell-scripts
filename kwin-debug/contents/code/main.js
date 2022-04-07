@@ -4,6 +4,9 @@ KWin Script Test
 GNU General Public License v3.0
 */
 
+var debug = true; // basic window properties
+var fulldebug = true; // all window properties
+
 // get KWin information
 debug(workspace.supportInformation());
 
@@ -21,13 +24,15 @@ forEach(event => {event.connect(win => {if (win) {
 // print all window properties
 [workspace.clientActivated, workspace.clientAdded].
 forEach(event => {event.connect(win => {if (win) {
-    debug("");
-    win_ = {"resourceName":    String(win.resourceName),
-            "resourceClass":   String(win.resourceClass),
-            "windowRole":      String(win.windowRole),
-            "desktopFileName": String(win.desktopFileName)};
+    fulldebug("");
+    win_ = { // fix improperly outputted properties
+        "resourceName":    String(win.resourceName),
+        "resourceClass":   String(win.resourceClass),
+        "windowRole":      String(win.windowRole),
+        "desktopFileName": String(win.desktopFileName)
+    };
     win = Object.assign({}, win, win_);
-    debug(JSON.stringify(win, undefined, 2));
+    fulldebug(JSON.stringify(win, undefined, 2));
 }})});
 
 // helpers
@@ -48,8 +53,10 @@ function windowType(win) {
         "toolbar",
         "menu",
         "comboBox",
-        "dndIcon"];
+        "dndIcon"
+    ];
     return windowTypes.map(type => (win[type] ? type : "")).join("");
 }
 
-function debug(...args) {console.debug("kwindebug:", ...args);}
+function debug(...args) {if (debug) console.debug("kwindebug:", ...args);}
+function fulldebug(...args) {if (fulldebug) console.debug("kwindebug:", ...args);}
