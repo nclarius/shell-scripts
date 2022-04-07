@@ -1,3 +1,5 @@
+# KWin Debug
+
 KWin script printing window information for debugging purposes.
 
 ## Installation
