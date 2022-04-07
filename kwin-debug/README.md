@@ -4,7 +4,7 @@ KWin script printing window information for debugging purposes.
 
 ## Installation
 
-For instructions how to install a KWin script, see [the KWin scripting tutorial](https://bugs.kde.org/show_bug.cgi?id=445058).
+For instructions how to install a KWin script, see [the KWin scripting tutorial](https://develop.kde.org/docs/extend/plasma/kwin/).
 
 ## Usage
 
