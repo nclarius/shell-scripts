@@ -12,6 +12,8 @@ Retrieve the script’s output from the journal:
 
 `journalctl -g 'kwindebug' -f`
 
+or with KSystemLog, filtered by message content "kwindebug".
+
 This will continuously print window properties as windows are added or activated. 
 
 ## Modification
