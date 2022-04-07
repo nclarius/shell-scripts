@@ -17,6 +17,10 @@ KWin script printing window information for debugging purposes.
 `./enable.sh`  
 `./disable.sh`
 
+## Configuration
+
+To get only basic window properties or all window properties, in `contents/code/main.js` set the varibles `debugMode` and `fulldebugMode` to `true` or `false` respectively.
+
 ## Usage
 
 Retrieve the script’s output from the journal:
@@ -26,7 +30,6 @@ Retrieve the script’s output from the journal:
 
 This will show window properties as windows are added or activated. The log can be viewed live or retrospectively.
 
-To get only basic window properties or all window properties, set the respective varibles in `contents/code/main.js`.
 
 ## Modificaiton
 
