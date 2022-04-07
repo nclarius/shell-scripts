@@ -2,6 +2,8 @@
 
 KWin script printing window information for debugging purposes.
 
+![screenshot](/home/natalie/Dropbox/Code/Shell/GitHub/kwin-debug/screenshot.png)
+
 ## Installation
 
 ### First installation
