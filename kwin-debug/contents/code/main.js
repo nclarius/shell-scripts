@@ -4,8 +4,8 @@ KWin Script Test
 GNU General Public License v3.0
 */
 
-var debug = true; // basic window properties
-var fulldebug = true; // all window properties
+var debugMode = true; // basic window properties
+var fulldebugMode = true; // all window properties
 
 // get KWin information
 debug(workspace.supportInformation());
@@ -58,5 +58,5 @@ function windowType(win) {
     return windowTypes.map(type => (win[type] ? type : "")).join("");
 }
 
-function debug(...args) {if (debug) console.debug("kwindebug:", ...args);}
-function fulldebug(...args) {if (fulldebug) console.debug("kwindebug:", ...args);}
+function debug(...args) {if (debugMode) console.debug("kwindebug:", ...args);}
+function fulldebug(...args) {if (fulldebugMode) console.debug("kwindebug:", ...args);}
