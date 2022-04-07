@@ -10,9 +10,9 @@ For instructions how to install a KWin script, see [the KWin scripting tutorial]
 
 Retrieve the script’s output from the journal:
 
-In the terminal:`journalctl -g 'kwindebug' -f`
+In the terminal: `journalctl -g 'kwindebug' -f`
 
-Or with KSystemLog, filtered by message content "kwindebug".
+Or with the graphical application KSystemLog, filtered by message content "kwindebug".
 
 This will continuously print window properties as windows are added or activated. 
 
