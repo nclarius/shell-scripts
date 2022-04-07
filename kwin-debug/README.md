@@ -8,7 +8,7 @@ For instructions how to install a KWin script, see [the KWin scripting tutorial]
 
 Retrieve the script’s output from the journal:
 
-`journalctl -g 'kwintest' -f`
+`journalctl -g 'kwindebug' -f`
 
 This will continuously print window properties as windows are added or activated. 
 
