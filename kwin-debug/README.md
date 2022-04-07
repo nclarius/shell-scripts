@@ -28,7 +28,7 @@ Retrieve the script’s output from the journal:
 - In the terminal: `journalctl -g 'kwindebug' -f`
 - Or with the graphical application KSystemLog, filtered by message content "kwindebug".
 
-This will show window properties as windows are added or activated. The log can be viewed live or retrospectively.
+This will show window information as windows are added or activated, i.e. simply click a window to print its properties. The log can be viewed live or retrospectively.
 
 
 ## Modificaiton
