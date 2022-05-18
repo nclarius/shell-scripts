@@ -2,6 +2,10 @@
 
 Shell script and instructions for a shortcut (here: modifier-only key Meta) to toggle open/close KRunner.
 
+## Dependencies
+
+X11.
+
 ## Set-up
 
 1. Make the script executable:
