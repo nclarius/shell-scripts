@@ -4,7 +4,7 @@ Shell script to insert predefined text snippets with a shortcut.
 
 ## Dependencies
 
-- `xdotool` (or `ydotool ` and modify the script accordingly)
+- `xdotool` (or `ydotool` and modify the script accordingly)
 
 ## Set-up
 
