@@ -7,7 +7,7 @@ UPDATE:
 There now exists a built-in shortcut which I recommend using instead:
 
 ```bash
-org.kde.krunner,/App,,toggleDisplay
+qdbus org.kde.krunner /App  toggleDisplay
 ```
 
 To set it up as a modifier-only shortcut:
