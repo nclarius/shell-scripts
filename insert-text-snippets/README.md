@@ -17,7 +17,7 @@ Shell script to insert predefined text snippets with a shortcut.
 - For each text snippet:  
   System Settings > Shortcuts > Custom Shortcuts >   
   Edit > New > Global Shortcut > Command/URL >   
-  Trigger > Shortcut: set keyboard shortcut;  
+  Trigger > Shortcut: your preferred keyboard shortcut;  
   Action > Command/URL: `snippet /path/to/snippet.txt`  
 
 
