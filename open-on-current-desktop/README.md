@@ -46,6 +46,10 @@ Then [compile KWin from source](https://community.kde.org/Get_Involved/developme
 
 ## Scripts
 
+## Supported platforms
+
+X11.
+
 ## Installation
 
 1. Ensure dependencies are installed: `awk`, `cut`, `grep`, `wmctrl`.
