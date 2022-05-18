@@ -10,6 +10,15 @@ There now exists a built-in shortcut which I recommend using instead:
 org.kde.krunner,/App,,toggleDisplay
 ```
 
+To set up as a modifier-only shortcut:
+
+```bash
+kwriteconfig5 --file kwinrc --group ModifierOnlyShortcuts --key Modifier "org.kde.krunner,/App,,toggleDisplay";
+qdbus org.kde.KWin /KWin reconfigure
+```
+
+where `Modifier` is one of `Alt`, `Control`, `Meta`, `Shift`.
+
 <hr>
 
 ## Dependencies
