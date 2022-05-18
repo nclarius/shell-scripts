@@ -21,6 +21,8 @@ where `Modifier` is one of `Alt`, `Control`, `Meta`, `Shift`.
 
 <hr>
 
+Original version:
+
 ## Dependencies
 
 X11.
