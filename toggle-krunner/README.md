@@ -13,7 +13,7 @@ qdbus org.kde.krunner /App  toggleDisplay
 To set it up as a modifier-only shortcut:
 
 ```bash
-kwriteconfig5 --file kwinrc --group ModifierOnlyShortcuts --key Modifier "org.kde.krunner,/App,,toggleDisplay";
+kwriteconfig5 --file kwinrc --group ModifierOnlyShortcuts --key Modifier "org.kde.krunner,/App,,toggleDisplay"
 qdbus org.kde.KWin /KWin reconfigure
 ```
 
