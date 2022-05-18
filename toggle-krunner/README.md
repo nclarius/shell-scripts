@@ -2,6 +2,16 @@
 
 Shell script and instructions for a shortcut (here: modifier-only key Meta) to toggle open/close KRunner.
 
+UPDATE:
+
+There now exists a built-in shortcut which I recommend using instead:
+
+```bash
+org.kde.krunner,/App,,toggleDisplay
+```
+
+<hr>
+
 ## Dependencies
 
 X11.
