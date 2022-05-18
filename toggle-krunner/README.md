@@ -1,6 +1,6 @@
-# Modfifier-Only Shortcuts
+# Toggle KRunner
 
-Shell script and instructions to make modifier keys (Ctrl, Alt, Meta, ...) in isolation trigger certain actions; here: press meta key to toggle open/close KRunner.
+Shell script and instructions for a shortcut (here: modifier-only key Meta) to toggle open/close KRunner.
 
 ## Set-up
 
