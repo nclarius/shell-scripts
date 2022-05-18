@@ -32,3 +32,12 @@ snippet /path/to/snippet.txt
 ### Keyboad shortcut
 
 Press the keyboard shortcut you defined for the snippet.
+
+
+## Small Print
+
+© 2022 Natalie Clarius \<natalie_clarius@yahoo.de\>
+
+This work is licensed under the GNU General Public License v3.0.  
+This program comes with absolutely no warranty.  
+This is free software, and you are welcome to redistribute and/or modify it under certain conditions.  
