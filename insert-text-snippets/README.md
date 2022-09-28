@@ -9,7 +9,7 @@ Shell script to insert predefined text snippets with a shortcut.
 ## Set-up
 
 - Make the script executable (or else call it with `sh` when you run the command).
-- Put the script in a location that is in `PATH` (or else call it with its full file path when you run the command).
+- Put the script in a location that is in `$PATH` (or else call it with its full file path when you run the command).
 - For each text snippet, save it as a plain text file `/path/to/snippet.txt`.
 
 ## Set-up a keyboard shortcut (for KDE)
@@ -18,7 +18,7 @@ Shell script to insert predefined text snippets with a shortcut.
   System Settings > Shortcuts > Custom Shortcuts >   
   Edit > New > Global Shortcut > Command/URL >   
   Trigger > Shortcut: your preferred keyboard shortcut;  
-  Action > Command/URL: `snippet /path/to/snippet.txt`  
+  Action > Command/URL: `snippet.sh /path/to/snippet.txt`  
 
 
 ## Usage
@@ -26,7 +26,7 @@ Shell script to insert predefined text snippets with a shortcut.
 ### Command-line
 
 ```bash
-snippet /path/to/snippet.txt
+snippet.sh /path/to/snippet.txt
 ```
 
 ### Keyboad shortcut
