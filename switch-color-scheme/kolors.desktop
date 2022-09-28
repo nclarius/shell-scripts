@@ -1,0 +1,8 @@
+[Desktop Entry]
+Type=Application
+Terminal=false
+Exec=/home/natalie/Dropbox/Code/Shell/kolors.sh
+Name=Kolors
+Comment=Switch between light and dark color scheme
+Categories=Settings;System
+Icon=color 

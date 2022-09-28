@@ -1,0 +1,8 @@
+[Desktop Entry]
+Type=Application
+Terminal=false
+Exec=/home/natalie/Dropbox/Code/Shell/kolors_dark.sh
+Name=Kolors Dark
+Comment=Set dark color scheme
+Categories=Settings;System
+Icon=color 

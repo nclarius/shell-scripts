@@ -1,0 +1,8 @@
+[Desktop Entry]
+Type=Application
+Terminal=false
+Exec=/home/natalie/Dropbox/Code/Shell/kolors_light.sh
+Name=Kolors Light
+Comment=Set light color scheme
+Categories=Settings;System
+Icon=color 
