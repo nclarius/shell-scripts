@@ -1,6 +1,6 @@
 # Open on Current Desktop
 
-Shell script to make Firefox open a new window on the current virtual desktop rather than raising an existing window on another desktop if there is not already a window on the current desktop.
+Shell script to make specific applications open a new window on the current virtual desktop rather than raising an existing window on another desktop if there is not already a window on the current desktop.
    
 ## Supported platforms
 
