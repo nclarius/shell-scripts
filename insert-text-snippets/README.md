@@ -6,37 +6,17 @@ Shell script to insert predefined text snippets with a shortcut.
 
 - `xdotool` (or `ydotool` and modify the script accordingly)
 
-## Set-up
+## Set-up (for KDE Plasma)
 
-- Make the script executable (or else call it with `sh` when you run the command).
-- Put the script in a location that is in `$PATH` (or else call it with its full file path when you run the command).
-- For each text snippet, save it as a plain text file `/path/to/snippet.txt`.
-
-## Set-up a keyboard shortcut (for KDE)
-
+- Download the script.
 - For each text snippet:  
-  System Settings > Shortcuts > Custom Shortcuts >   
-  Edit > New > Global Shortcut > Command/URL >   
-  Trigger > Shortcut: your preferred keyboard shortcut;  
-  Action > Command/URL: `snippet.sh /path/to/snippet.txt`  
-
-
-## Usage
-
-### Command-line
-
-```bash
-snippet.sh /path/to/snippet.txt
-```
-
-### Keyboad shortcut
-
-Press the keyboard shortcut you defined for the snippet.
-
+  - Save it as a plain text file.
+  - System Settings > Shortcuts > Add Command > `sh PATH_TO_THE_SCRIPT PATH_TO_THE_SNIPPET`.
+  - Choose the newly added shortcut from the list in the section "Commands", set your preferred key combination.
 
 ## Small Print
 
-© 2022 Natalie Clarius \<natalie_clarius@yahoo.de\>
+© 2022-2023 Natalie Clarius \<natalie_clarius@yahoo.de\>
 
 This work is licensed under the GNU General Public License v3.0.  
 This program comes with absolutely no warranty.  
