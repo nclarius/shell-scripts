@@ -6,11 +6,11 @@
 # GNU General Public License v3.0
 ###############
 
-function get_kde_color() {
-    IFS="," read -A color <<< $(kreadconfig5 --file kdeglobals --group "$1" --key "$2")
-    if [[ $color != \#* ]]; then color=$(printf "#%02x%02x%02x\n" $color); fi
-    echo $color
-}
-accent=$(get_kde_color General AccentColor) && [[  $accent != "#000000" ]] || accent=$(get_kde_color Colors:View DecorationFocus)
+color=$(kreadconfig5 --file "kdeglobals" --group "General" --key "AccentColor") && [[ -n "$color" ]] || color=$(kreadconfig5 --file "kdeglobals" --group "Colors:View" --key "DecorationFocus")  # get accent color
+# todo: reformat from hexadecimal to rgb if necessary
+color="${color//,/ }"  # reformat
 
-echo "$accent"
+for key in /sys/class/leds/rgb:kbd_backlight*; do
+	echo "$color" | sudo tee $key/multi_intensity  # write color
+    # todo check that key actually is rgb
+done
