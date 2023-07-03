@@ -13,6 +13,10 @@ Shell script to insert predefined text snippets with a shortcut.
   - Save it as a plain text file.
   - System Settings > Shortcuts > Add Command > `sh PATH_TO_THE_SCRIPT PATH_TO_THE_SNIPPET`, eg `sh ~/scripts/snippet.sh ~/snippets/hello.txt`.
   - Choose the newly added shortcut from the list in the section "Commands", and set your preferred key combination.
+ 
+## Troubleshooting
+
+If parts of the text are missing or it doesn't show up at all, try incresaing the delay in the scrpit.
 
 ## Small Print
 
